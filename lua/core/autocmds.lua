@@ -55,6 +55,11 @@ autocmd('Filetype', {
   },
   command = 'setlocal shiftwidth=2 tabstop=2'
 })
+autocmd('Filetype', {
+  group ='setIndent',
+  pattern = { 'c', 'cpp', 'java' },
+  command = 'setlocal shirtwidth=2 tabstop=2'
+})
 
 -----------------------------------------------------------
 -- Terminal settings
